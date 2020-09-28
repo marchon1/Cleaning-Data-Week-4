@@ -52,8 +52,7 @@ names(combdata2)<- gsub("tBody", "TimeBody", names(combdata2))
 names(combdata2)<- gsub("mean", "Mean", names(combdata2))
 names(combdata2)<- gsub("std", "StandardDev", names(combdata2))
 
-#Get the mean and std data from X
-
+#Independent data set
 finaldata <- combdata2 %>%
   group_by(subject, code) %>%
   summarise_all(funs(mean))
