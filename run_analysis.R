@@ -3,7 +3,7 @@ subtrain<-read.table("./UCI HAR Dataset/train/subject_train.txt")
 Ytrain<-read.table("./UCI HAR Dataset/train/Y_train.txt")
 features<-"./UCI HAR Dataset/features.txt"
 
-analysis <- rbind(Ytrain, Xtrain, subtrain)
+analysis <- cbind(Ytrain, Xtrain, subtrain)
 analysis <- cbind(analysis, train.or.test = "train")
 colnames(analysis)<-read.table(features)
 
@@ -12,7 +12,7 @@ subtest<-read.table("./UCI HAR Dataset/test/subject_test.txt")
 Ytest<-read.table("./UCI HAR Dataset/test/Y_test.txt")
 colnames(analysis)<-read.table(features)
 
-analysis2 <- rbind(Ytest, Xtest, subtest)
+analysis2 <- cbind(Ytest, Xtest, subtest)
 analysis2 <- cbind(analysis, train.or.test = "test")
 
 combanalysis <- rbind(analysis, analysis2)
