@@ -1,6 +1,17 @@
 # Cleaning Data Week 4
+
+Title: "DATA CODEBOOK - ADL DATASET"
+Date: "28/9/2020"
+---
+
+=================================
+For purpose of course in Getting and Cleaning Data.
+	
+The experiments were run on a sample set of 30 participants. Wearing a smartphone, each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING.  Data was captured at a rate of 50Hz, and consists of 3-axial linear acceleration and 3-axial angular velocity.  The output data consists of two datasets: training data and test data.	
+
+=================================
  
-DATA CODEBOOK - ADL DATASET
+Activity Labels
 
 1 WALKING
 2 WALKING_UPSTAIRS
